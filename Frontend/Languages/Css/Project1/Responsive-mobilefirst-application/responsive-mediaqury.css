@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+.item{
+    background-color:skyblue;
+    font-size: 20px;
+    color:beige;
+    display: none;
+}
+@media (min-width:0px) and (max-width:200px){
+    #item-1{
+        display: block;
+        background-color:brown;
+    }
+}
+@media (min-width:201px) and (max-width:400px){
+    #item-2{
+        display: block;
+        background-color: rgb(37, 155, 53);
+    }
+}
+@media (min-width:401px) and (max-width:800px){
+    #item-3{
+        display: block;
+        background-color: rgb(255, 140, 0);
+    }
+}
+@media (min-width:801px) {
+    #item-4{
+        display: block;
+        background-color: rgb(55, 59, 110);
+    }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <CENTER>
+    <h1>THREE TYPES OF RESPONSIVE</h1>
+    </CENTER>
+    <ul>
+        <a href="../Responsive-mobilefirst-application/responsive-mediaqury.html"><li>Media query</li></a><br>
+        <a href="../Responsive-mobilefirst-application/responsive-flex.html"><li>Flex</li></a><br>
+        <a href="../Responsive-mobilefirst-application/responsive-grid.html"><li>Grid</li></a><br>
+
+    </ul>
+    <a href="../Responsive-mobilefirst-application/responsive-mediaqury.html"><h1>Media Query</h1></a>
+    <p>
+        Abstract<br>
+              Media queries in CSS are CSS features that display content that adapts to different features such as screen resolution. It applies different custom styles to a browser or device and targets specific characteristics and features to make the web page more responsive. CSS Breakpoints are customizable widths to control and change the behavior of our layout on various devices and screen sizes. They are used to change font size, background color, hide elements, and many more.<br><br>
+        Scope<br>
+              Have you wondered how the website changes its appearance on different devices and browsers? Do you know how to make your web pages responsive (Responsive web design is all about creating a web design by writing codes that work well on all devices and ensure usability)? Have you heard of breakpoints?<br><br>
+        What are CSS Media Queries?<br>
+              Media Queries is a feature of CSS allowing content rendering to adapt to different features such as screen resolution. CSS Media Queries apply different custom styles to a browser or device to suit user preferences. It targets specific characteristics and features to make the system more responsive.<br>
+              
+              As we all know, the most commonly used media query is viewport ranges, but it is not the only one. There are a lot of others like orientation, resolution, aspect-ratio, and many more that are yet unexplored.<br><br>
+        Media Types
+              Media types are the media that we are trying to style. In many cases, we use the screen as the media type. Let's explore each of them.<br>
+              
+              .all -To match all devices like devices with print previews or screen.<br>
+              .print -Used for devices with print previews or intended to print like printers.<br><br>
+              .screen -Used for devices with a screen like tablets, laptops, mobile phones, and computers.<br>
+              .speech-Used for devices with a screen reader. It applies the style when the screen reader reads the page out loud like Adobe Reader.<br>
+        Logical Operators
+              and - It combines media features or a media type and feature. It is true if all the expressions are true. It also represents a range of various features.<br>
+              .It shows the color of the text as blue when the screen has a min-width of 600px and a landscape orientation. If either of the condition is false, the code results in its default black color.<br>
+              .As the conditions are joined by the and operator, the code works only when all the conditions are true. In the example, the element styles when the screen width is between 320px to 768px.<br><br>
+              or (Comma-separated) - If either of the queries is true, we comma-separate them.<br>
+              .Unlike the and operator, the or operator works well when either of the conditions are true. In this example, the code applies if either the screen is in landscape mode or it has a min-width of 600px.<br><br>
+              not - not operator is used to negate the entire query and reverse its meaning.<br>
+              .It is evaluated as not (all and (orientation: landscape)) which works when the screen is not on landscape mode.<br><br>
+
+        CSS Media Query Features
+            Width<br>
+              .It specifies the width of the viewport. It can be a specific number or a range of values using min-width and max-width.<br><br>
+            Height<br>
+              .It specifies the height of the viewport. It can be a specific number or a range of values using min-height and max-height.<br><br>
+            Device-Width<br>
+              .It specifies the width of the screen that displays rendered elements.<br><br>
+            Device-Height<br>
+              .It specifies the height of the screen that displays rendered elements.<br><br>
+            Orientation<br>
+              .It is the mode of the orientation of the viewport. It can be portrait(vertical) or landscape(horizontal) based on screen rotation.<br><br>
+            Aspect-Ratio<br>
+              .It specifies the ratio between the width and height of the viewport.<br><br>
+            Device-Aspect-Ratio<br>
+              .It specifies the ratio of the values device-width and device-height of the rendering surface.<br><br>
+            Color<br>
+              .It specifies the number of bits of the color of a device.<br><br>
+            Color-Index<br>
+              .It specifies the number of colors the device supports. It can be an exact number or a range of values with min-color-index and max-color-index.<br><br>
+            Monochrome<br>
+              .It specifies the number of bits of the color of a monochrome or greyscale device.<br><br>
+            Resolution<br>
+              .It specifies the resolution of the device in terms of pixel density.<br><br>
+            Scan<br>
+              .It specifies the scanning process of the output device to display how a device paints an image on the screen. It has two values interlace and progressive. Interlace draws odd and even lines alternatively, whereas progressive draws them all in a sequence.<br><br>
+            Grid<br>
+              .It uses a 0 and 1 to determine if a device has a grid(1) or bitmap(0) screen.<br><br>
+            How to Set CSS Breakpoints?<br>
+             CSS Breakpoints are set based on two things:<br>
+               .Based on device With the rapidly changing technology, there are too many devices coming out with different screen sizes. It is not feasible for designers to target every screen size. So to cover all the sizes, we set breakpoints on the most popular device sizes. Moreover, We should first design on mobile before designing for any other devices. Instead of changing styles for smaller devices, we should change them for larger ones.<br>
+                These media query are applied depending on the devices where we want to change the layout of the the elements.<br><br>
+               .Based on content It is better to change the designs where the content starts to break. That's the point where we use a media query. These are the points where breakpoints get added. We add a breakpoint when we want a webpage to behave differently on either side of the breakpoint. Thus the webpage becomes more readable and attractive. For example, we see a collapsed menu on small screens and an expanded form on screen size more than that.<br>
+                These media queries help us create a layout as per our convenience and definition of breakpoints. The breakpoints can be in between the ranges of the specified devices and can start and end based on the content.<br><br>
+            Using Min-Width and Max-Width for CSS Breakpoints<br>
+                We use min and max screen width media queries to make our website responsive on all screen sizes.<br>
+                Min-width media queries are used to set breakpoints for mobile devices, whereas max-width media queries are for larger ones.<br>
+                These are the media query ranges or breakpoints we use in our CSS for all types of devices.<br><br>
+            Min-Width<br>
+                The min-width media queries apply styles on mobile devices. It takes the assigned value as the initial values and applies the styles until the maximum limit. For example, @media (min-width: 576px) { ... } applies the styles on screen with width more than 576px. The style would apply to devices between the minimum specified width and above.<br><br>
+            Max-Width<br>
+                The max-width media queries apply styles on larger devices. It takes zero as the initial value if no minimum value has been set yet. Styles within that media query apply on devices whose screen width lies in the range of zero and the given max-width. For example, @media (max-width: 576px) { ... } applies the styles on screen with width between 0 and 576px.<br><br>
+
+                       Note: We subtract 0.02 from the max values to avoid conflict between the ranges.<br><br>
+            Conclusion<br>
+                .Media queries are adaptable to different screen sizes and device types like printers and screen readers.<br>
+                .They can be applied to various media query features like min-width, max-width, orientation, height, resolution, etc.<br>
+                .They can also be used to hide and display elements where required.<br>
+                .These are used to design websites and applications which can work on various screen sizes by changing layouts at certain breakpoints.<br>
+    </p>
+    <p>
+           <a href="../Responsive-mobilefirst-application/responsive-flex.html"><h1>Flexbox</h1></a>
+                A responsive web design is referred to as a design that changes its layout depending upon the environment it is being used in. By environment, we mean the behavior of the website will change based on the device screen size, width, resolution, orientation, etc. There are many ways with which you can make your website responsive such as media queries, grid, flexbox, etc. The focus of this write-up will be on how to make your web design responsive using flexbox.<br><br>
+            Responsive Web Design using Flexbox<br>
+                CSS Flexbox is a layout model that allows an efficient and dynamic arrangement of elements. This layout is one-dimensional and permits the placement of elements inside a container with equally distributed space.<br>
+                It makes elements responsive which means that the elements change their behavior according to the kind of device displaying them. Moreover, it makes elements flexible and provides them with appropriate position, and symmetry.<br>
+                A flexbox has two components, which are flex container, and flex item. A flex container describes the properties of the ancestor element, while, a flex item defines the properties of successor elements. Each of these components makes use of various properties to implement a flexbox.<br>
+                Here we will present you with various responsive layouts that you can create for different devices using flexbox.<br><br>
+            How to create a Responsive Navbar using flexbox?
+                Here we are going to demonstrate how you can make a responsive navbar using the one-column layout for devices such as mobile phones, tablets, etc which have a small screen size, and a two-column layout for devices like computers, laptops, etc which have bigger screen sizes.<br><br>
+            How to create a Responsive Navbar using flexbox?<br>
+                Here we are going to demonstrate how you can make a responsive navbar using the one-column layout for devices such as mobile phones, tablets, etc which have a small screen size, and a two-column layout for devices like computers, laptops, etc which have bigger screen sizes.<br><br>
+            Conclusion<br>
+                A responsive web design can be created using various flexbox properties such as flex-direction, flex-flow, flex-wrap, etc along with specifying certain media queries. The media query should specify the type and features of a device according to which the web design will alter its appearance on various devices. In the article above, we have demonstrated a few layouts that you can create using various flexbox properties along with media queries.<br><br>
+                
+    </p>
+    <p>
+            <a href="../Responsive-mobilefirst-application/responsive-grid.html"><h1>Grid</h1></a>
+                Most of the web pages consist of the grid layout, which means the page is divided into rows and columns. With the help of this grid layout, we can place the rows and columns on the webpage very easily and efficiently. It allows us to split any row into 12 columns with a maximum width of 100%. When we resize the browser, these grid elements will shrink and expand according to the screen size.<br><br>
+            Creating a Responsive Grid-view in CSS<br>
+                To create a responsive grid view, we have to set the box-sizing property having a value border-box for all the elements in a web page. This will include the padding and border of the element into the height and width of the element.<br>
+              .The given syntax is used to set any CSS property globally, or we can say for all the HTML elements.<br>
+              .We have created a header using the "div" element and assigns the .header class to set the CSS properties for the header element. The CSS properties which are specified for the header are given below:<br>
+              .Then we have created another "div" for the main menu and assigns the class .menu. We have created an unordered list using "ul" element add the "li" elements for the list items inside that "div". The CSS properties applied to this element are given below:<br>
+            Conclusion<br>
+                In this lesson, we have learned how to create a responsive grid layout having rows and columns using CSS properties.
+
+    </p>
+
+</body>
+</html>
