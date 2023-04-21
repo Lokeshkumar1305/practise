@@ -11,9 +11,28 @@
 
 }
 .root3{
-    width:0px;
-    height:0px;
-    border:50px solid tomato;
-    margin-top:100px;
-    margin-left: 50px;
-}
+        width:0px;
+        height:0px;
+        border:50px solid transparent;
+        border-bottom-color: red;
+        position:relative;
+        top:-50px;
+
+      }
+      .root3:after {
+        content: '';
+        position: absolute;
+        left: -50px;
+        top: 50px;
+        width:0px;
+        height:0px;
+        border:50px solid transparent;
+        border-top-color: red;
+      }
+      .common{
+        margin-left:20px;
+        margin-top:150px;
+        
+      }
+      
+     
