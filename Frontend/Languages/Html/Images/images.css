@@ -1,0 +1,17 @@
+body{
+    
+    color:aqua;
+    background-color: cadetblue;
+   /* border: 2px solid black;*/
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    
+}
+.images{
+    margin:20px;
+    width: 250px;
+    
+}
