@@ -1,33 +1,36 @@
- let total=[]
+ let totalp1=[]
+ let totalp2=[]
+ let winner=document.getElementbyId("winnerAnnounce")
 function randomp1(){
-    let total1= document.getElementById('total')
+    let total1= document.getElementById('totalp1')
     
    let num= Math.floor(Math.random()*6+1)
-  let ran= document.getElementById('random')
+  let ran= document.getElementById('randomp1')
   ran.innerHTML=`${ num}`
-  total.push(num)
-  console.log(total)
-  total1.innerHTML=total
+  totalp1.push(num)
+ /* let scoreP1=totalp1.reduce((a,b)=>a+b) */
+  total1.innerHTML=scoreP1
+  if(scoreP1>=50){
+    winner.innerHTML="winner player1"
+  }
+
   
 }
 
-let total2=[]
+
 function randomp2(){
-    let total3= document.getElementById('total2')
+    let total2= document.getElementById('totalp2')
     
-   let num2= Math.floor(Math.random()*6+1)
-  let ran2= document.getElementById('random2')
-  ran2.innerHTML=`${ num2}`
-  total2.push(num2)
-  console.log(total2)
-  total3.innerHTML=total2
+   let num= Math.floor(Math.random()*6+1)
+  let ran= document.getElementById('randomp2')
+  ran.innerHTML=`${ num}`
+  totalp2.push(num)
+  let scoreP2=totalp2.reduce((a,b)=>a+b)
+  total2.innerHTML=scoreP2
+  
+  if(scoreP2>=50){
+    winner.innerHTML="winnerplayer2"
 
 }
-if(total>total2){
-  document.querySelector('h1').innerHTML="player1 won :)";
-}else if (total<total2){
-  document.querySelector('h1').innerHTML="player2 won :)";
-}else{
-  document.querySelector('h1').iinerHTML="draw";
 }
 

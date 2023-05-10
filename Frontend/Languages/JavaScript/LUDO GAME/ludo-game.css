@@ -1,41 +1,27 @@
-*{
-    margin:0; 
-    padding:0; 
+.player_box{
+    background-color:dimgrey;
+    color:white;
+    text-align: center;
+    font-size: 50px;
+    padding: 25px;
+    border-radius: 20px;
 }
-
-body{ 
-    background-color:darkslateblue; 
+#winner_display{
+    animation: blink 2s infinite linear ;
 }
-
-.container{ 
-    width: 70%; 
-    margin: auto; 
-    text-align: center; 
+@keyframes blink {
+    from{
+        color: red;
+        text-decoration: underline;
+    }
+    to{
+        color:chartreuse;
+        text-decoration: none;
+    }
 }
-
-.dice{ 
-    text-align:center; 
-    display: inline-block; 
+.roll1{
+    margin-left:100px;
 }
-
-h1{
-   margin: 30px;
-   font-size: 6rem;
-   color:goldenrod;
+.roll2{
+    margin-left:845px;
 }
-
-p{
- font-size: 2rem; color: #00b894; 
- text-shadow: 1px 1px white;
-}
-
-button{
-padding:10px; 
-background-color:#00b894; 
-color: white;
-border:none;
-}
-
-img{ 
-    width: 75%; 
-}     
